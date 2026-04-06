@@ -32,13 +32,13 @@ function addItem(name, price) {
         return;
     }
 
+    // Create an event listener to add items to the list
+    addBtn.addEventListener("click", () => {
+        addItem();
+    });
+
     displayItems();
 }
-
-// Create an event listener to add items to the list
-addBtn.addEventListener("click", () => {
-    addItem();
-});
 
 
 // Create a new function to display your items in your display list
