@@ -35,7 +35,7 @@ function displayItems() {
 
     // Create a card that'll display your items after addition
     shoppingItems.forEach(item => {
-        const card = document.createElement("div");
+        let card = document.createElement("div");
         card.classList.add("card");
 
         card.innerHTML = `
@@ -43,6 +43,7 @@ function displayItems() {
             <p>${item.price}</p>
             <label><input type="checkbox" id="purchase">${item.isPurchased}</label>
         `;
+        
 
         // Create an event listener for marking your item as complete
         card.querySelector("purchase").addEventListener("click", () => {
