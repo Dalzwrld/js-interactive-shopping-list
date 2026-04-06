@@ -7,6 +7,7 @@ const price = document.getElementById("itemPrice");
 const addButton = document.querySelector("addButton");
 const displayList = document.getElementById("displayList");
 
+
 // Create a function to add your items
 function addItem(name, price) {
     const name = itemName.value;
