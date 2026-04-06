@@ -34,7 +34,7 @@ function addItem(name, price) {
 }
 
 // Create an event listener to add items to the list
-addButton.addEventListener("click", addItem() => {});
+addButton.addEventListener("click", addItem());
 
 // Create a new function to display your items in your display list
 function displayItems() {
@@ -88,11 +88,3 @@ totalButton.addEventListener("click", () => {
     let total = shoppingItems.reduce((total, price) => total + price);
     alert("Your total price is Ksh ${total}");
 });
-
-
-
-function checkInputType(name, price) {
-    if (isNaN(price) && name === "" ) {
-        return;
-    }
-}
