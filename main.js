@@ -2,8 +2,8 @@
 let shoppingItems = [];
 
 // Fetch your elements from your HTML code
-const name = document.getElementById("itemName");    
-const price = document.getElementById("itemPrice");
+const productName = document.getElementById("itemName");    
+const productPrice = document.getElementById("itemPrice");
 const addBtn = document.querySelector("addButton");
 const list = document.getElementById("displayList");
 
@@ -15,8 +15,8 @@ function addItem(name, price) {
 
     // Create an object to store each product with its price
     const item = {
-        itemName: name,
-        itemPrice: price,
+        name: name,
+        price: price,
         isPurchased: false, 
     };
 
@@ -24,8 +24,8 @@ function addItem(name, price) {
     shoppingItems.push(item);
 
     // Clear out your input fields
-    name.value = "";
-    price.value = "";
+    productName.value = "";
+    productPrice.value = "";
     
     // Check for validity of your inputs
     if (isNaN(price) && name === "" ) {
