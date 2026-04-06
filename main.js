@@ -59,6 +59,8 @@ function displayItems() {
         card.style.width = "250px";
         card.style.height = "150px";
         card.style.border = "1px solid #000";
+        card.style.display = "flex";
+        card.style.flexDirection = "row";
 
         // Create an event listener for marking your item as complete
         card.querySelector("purchase").addEventListener("click", () => {
