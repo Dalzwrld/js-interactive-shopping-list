@@ -10,8 +10,8 @@ const displayList = document.getElementById("displayList");
 
 // Create a function to add your items
 function addItem(name, price) {
-    const name = itemName.value;
-    const price = itemPrice.value;
+    const name = document.getElementById("itemName").value;
+    const price = document.getElementById("itemPrice").value;
 
     // Create an object to store each product with its price
     const item = {
