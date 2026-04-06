@@ -54,11 +54,19 @@ function displayItems() {
     });
 }
 
+
 // Add a clear list button
 const clearButton = document.createElement("button");
 clearButton.classList.add("clearButton");
 
 clearButton.innerHTML = `<button type="submit" id="clearButton">Clear list</button>`;
+
+// Create an event listener to clear your list
+clearButton.addEventListener("click", () => {
+    shoppingItems = [];
+    displayList();
+});
+
 
 // Check for validity of your inputs
 function checkInputType(name, price) {
