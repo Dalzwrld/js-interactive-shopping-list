@@ -74,6 +74,9 @@ totalButton.classList.add("totalButton");
 
 totalButton.innerHTML = `<button type="submit" id="totalButton">Total</button>`;
 
+// Create an event listener to calculate the total price of all the items in the list
+totalButton.addEventListener("click", () => {});
+
 // Check for validity of your inputs
 function checkInputType(name, price) {
     if (typeof price !== number && typeof name !== string ) {
