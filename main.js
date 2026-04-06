@@ -58,7 +58,7 @@ function displayItems() {
 const clearButton = document.createElement("button");
 clearButton.classList.add("clearButton");
 
-clearButton.innerHTML
+clearButton.innerHTML = `<button type="submit" id="clearButton">Clear list</button>`;
 
 // Check for validity of your inputs
 function checkInputType(name, price) {
