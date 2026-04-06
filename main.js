@@ -24,8 +24,8 @@ function addItem(name, price) {
     shoppingItems.push(item);
 
     // Clear out your input fields
-    itemName.value = "";
-    itemPrice.value = "";
+    name.value = "";
+    price.value = "";
     
     // Check for validity of your inputs
     if (isNaN(price) && name === "" ) {

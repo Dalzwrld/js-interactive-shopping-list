@@ -55,7 +55,7 @@ button {
     margin-top: 10px;
 }
 
-#displayList {
+#list {
     display: flex;
     flex-direction: column;
     align-items: center;
