@@ -58,7 +58,7 @@ function displayItems() {
 
         // Create an event listener for marking your item as complete
         card.querySelector("purchase").addEventListener("click", () => {
-            item.isPurchased = !item.isPurchased;
+            card.style.textDecoration = line-through;
             displayItems();
         });
 
@@ -81,13 +81,13 @@ clearBtn.addEventListener("click", () => {
 
 
 // Add a total button
-const totalButton = document.createElement("button");
-totalButton.classList.add("totalButton");
+const totalBtn = document.createElement("button");
+totalBtn.classList.add("totalButton");
 
-totalButton.innerHTML = `<button type="submit" id="totalButton">Total</button>`;
+totalBtn.innerHTML = `<button type="submit" id="totalButton">Total</button>`;
 
 // Create an event listener to calculate the total price of all the items in the list
-totalButton.addEventListener("click", () => {
+totalBtn.addEventListener("click", () => {
     let total = shoppingItems.reduce((total, price) => total + price);
     alert(`Your total price is Ksh ${total}`);
 });
