@@ -31,6 +31,7 @@ function addItem(name, price) {
         return;
     }
 
+    displayList();
 }
 
 // Create an event listener to add items to the list
