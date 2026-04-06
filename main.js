@@ -53,7 +53,6 @@ function displayItems() {
             <p>${item.price}</p>
             <label><input type="checkbox" id="purchase">${item.isPurchased}</label>
         `;
-        
 
         // Create an event listener for marking your item as complete
         card.querySelector("purchase").addEventListener("click", () => {
@@ -88,5 +87,5 @@ totalButton.innerHTML = `<button type="submit" id="totalButton">Total</button>`;
 // Create an event listener to calculate the total price of all the items in the list
 totalButton.addEventListener("click", () => {
     let total = shoppingItems.reduce((total, price) => total + price);
-    alert("Your total price is Ksh ${total}");
+    alert(`Your total price is Ksh ${total}`);
 });
