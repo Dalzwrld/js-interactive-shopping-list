@@ -15,7 +15,7 @@ function addItem(name, price) {
     // Create an object to store each product with its price
     const item = {
         itemName: name,
-        itemPrice: Number(price),
+        itemPrice: price,
         isPurchased: false, 
     };
 
