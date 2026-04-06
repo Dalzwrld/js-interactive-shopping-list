@@ -68,6 +68,12 @@ clearButton.addEventListener("click", () => {
 });
 
 
+// Add a total button
+const totalButton = document.createElement("button");
+totalButton.classList.add("totalButton");
+
+totalButton.innerHTML = `<button type="submit" id="totalButton">Total</button>`;
+
 // Check for validity of your inputs
 function checkInputType(name, price) {
     if (typeof price !== number && typeof name !== string ) {
