@@ -4,7 +4,7 @@ let shoppingItems = [];
 // Fetch your elements from your HTML code
 const name = document.getElementById("itemName");    
 const price = document.getElementById("itemPrice");
-const addButton = document.querySelector("addButton");
+const addBtn = document.querySelector("addButton");
 const list = document.getElementById("displayList");
 
 
@@ -36,7 +36,7 @@ function addItem(name, price) {
 }
 
 // Create an event listener to add items to the list
-addButton.addEventListener("click", () => {
+addBtn.addEventListener("click", () => {
     addItem();
 });
 
@@ -44,7 +44,7 @@ addButton.addEventListener("click", () => {
 // Create a new function to display your items in your display list
 function displayItems() {
     // Clear out your old display
-    displayList.innerHTML = "";
+    list.innerHTML = "";
 
     // Create a card that'll display your items after addition
     shoppingItems.forEach(item => {
@@ -63,7 +63,7 @@ function displayItems() {
             displayItems();
         });
 
-        displayList.appendChild(card);
+        list.appendChild(card);
     });
 }
 
