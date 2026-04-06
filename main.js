@@ -49,6 +49,8 @@ function displayItems() {
             item.isPurchased = !item.isPurchased;
             displayItems();
         });
+
+        displayList.appendChild(card);
     });
 }
 
