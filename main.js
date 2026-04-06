@@ -13,14 +13,14 @@ function addItem(name, price) {
     const price = itemPrice.value;
 
     // Create an object to store each product with its price
-    const shoppingItemsObject = {
+    const item = {
         itemName: name,
         itemPrice: Number(price),
         isPurchased: false, 
     };
 
     // Add your object into your array
-    shoppingItems.push(shoppingItemsObject);
+    shoppingItems.push(item);
 
     // Clear out your input fields
     itemName.value = "";
