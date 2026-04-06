@@ -58,7 +58,7 @@ function displayItems() {
 
         // Create an event listener for marking your item as complete
         card.querySelector("purchase").addEventListener("click", () => {
-            card.style.textDecoration = line-through;
+            card.style.textDecoration = "line-through";
             displayItems();
         });
 
