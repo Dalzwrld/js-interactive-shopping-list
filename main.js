@@ -48,7 +48,7 @@ function displayItems() {
 
     // Create a card that'll display your items after addition
     shoppingItems.forEach(item => {
-        let card = document.createElement("div");
+        const card = document.createElement("div");
         card.classList.add("card");
 
         card.innerHTML = `
