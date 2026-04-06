@@ -83,10 +83,8 @@ totalButton.addEventListener("click", () => {
 
 // Check for validity of your inputs
 function checkInputType(name, price) {
-    if (typeof price !== number && typeof name !== string ) {
-        console.log("Input not valid");
-    } else {
-        console.log(`${key}: ${variable[key]}`);
+    if (typeof price === number && typeof name === string ) {
+        return;
     }
 }
 
