@@ -31,7 +31,7 @@ function addItem(name, price) {
         return;
     }
 
-    displayList();
+    displayItems();
 }
 
 // Create an event listener to add items to the list
@@ -75,7 +75,7 @@ clearButton.innerHTML = `<button type="submit" id="clearButton">Clear list</butt
 // Create an event listener to clear your list
 clearButton.addEventListener("click", () => {
     shoppingItems = [];
-    displayList();
+    displayItems();
 });
 
 
