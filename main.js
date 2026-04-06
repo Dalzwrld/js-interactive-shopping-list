@@ -15,8 +15,8 @@ function addItem(name, price) {
 
     // Create an object to store each product with its price
     const item = {
-        name: name,
-        price: price,
+        productName: name,
+        productPrice: price,
         isPurchased: false, 
     };
 
@@ -35,9 +35,8 @@ function addItem(name, price) {
     // Create an event listener to add items to the list
     addBtn.addEventListener("click", () => {
         addItem();
+        displayItems();
     });
-
-    displayItems();
 }
 
 
