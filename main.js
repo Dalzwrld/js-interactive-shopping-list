@@ -28,13 +28,14 @@ function addItem(name, price) {
     
     // Check for validity of your inputs
     if (isNaN(price) && name === "" ) {
-    return;
+        return;
     }
 
 }
 
 // Create an event listener to add items to the list
 addButton.addEventListener("click", addItem());
+
 
 // Create a new function to display your items in your display list
 function displayItems() {
