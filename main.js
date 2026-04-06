@@ -56,6 +56,10 @@ function displayItems() {
             <label><input type="checkbox" id="purchase">${item.isPurchased}</label>
         `;
 
+        card.style.width = "250px";
+        card.style.height = "150px";
+        card.style.border = "1px solid #000";
+
         // Create an event listener for marking your item as complete
         card.querySelector("purchase").addEventListener("click", () => {
             card.style.textDecoration = "line-through";
