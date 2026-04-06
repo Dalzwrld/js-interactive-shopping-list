@@ -36,7 +36,9 @@ function addItem(name, price) {
 }
 
 // Create an event listener to add items to the list
-addButton.addEventListener("click", addItem());
+addButton.addEventListener("click", () => {
+    addItem();
+});
 
 
 // Create a new function to display your items in your display list
