@@ -77,8 +77,9 @@ totalButton.innerHTML = `<button type="submit" id="totalButton">Total</button>`;
 // Create an event listener to calculate the total price of all the items in the list
 totalButton.addEventListener("click", () => {
     let total = shoppingItems.reduce((total, price) => total + price);
-    alert
+    alert("Your total price is ${total}")
 });
+
 
 // Check for validity of your inputs
 function checkInputType(name, price) {
