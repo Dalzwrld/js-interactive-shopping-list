@@ -4,7 +4,7 @@ let shoppingItems = [];
 // Fetch your elements from your HTML code
 const productName = document.getElementById("itemName");    
 const productPrice = document.getElementById("itemPrice");
-const addBtn = document.querySelector("addButton");
+const addBtn = document.getElementById("addButton");
 const list = document.getElementById("displayList");
 
 
@@ -28,7 +28,7 @@ function addItem(name, price) {
     productPrice.value = "";
     
     // Check for validity of your inputs
-    if (isNaN(price) && name === "" ) {
+    if (isNaN(price) && name === "") {
         return;
     }
 
