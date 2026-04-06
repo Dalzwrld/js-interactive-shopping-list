@@ -25,8 +25,16 @@ function addItem(name, price) {
     // Clear out your input fields
     itemName.value = "";
     itemPrice.value = "";
+    
+    // Check for validity of your inputs
+    if (isNaN(price) && name === "" ) {
+    return;
+    }
 
 }
+
+// Create an event listener to add items to the list
+addButton.addEventListener("click", addItem() => {});
 
 // Create a new function to display your items in your display list
 function displayItems() {
@@ -82,11 +90,9 @@ totalButton.addEventListener("click", () => {
 });
 
 
-// Check for validity of your inputs
+
 function checkInputType(name, price) {
-    if (typeof price === number && typeof name === string ) {
+    if (isNaN(price) && name === "" ) {
         return;
     }
 }
-
-addButton.addEventListener("click", addItem);
